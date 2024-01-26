@@ -19,3 +19,12 @@ model User {
 
   @@map("users")
 }
+
+model Contacts {
+  id String @id @default(uuid())
+  name String
+  email String
+  phone String
+
+  @@map("contacts")
+}
